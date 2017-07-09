@@ -4,51 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheets/styles.css">
+    <!-- <link rel="stylesheet" href="stylesheets/flexbox.css"> -->
     <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet" type="text/css">
     <title>Ariane Deschenes Foucher</title>
     <link rel="icon" href="assets/sparkle.png" type="sparkle icon">
   </head>
 
-  <body>
-    <header class="nav">
-      <ul class="nav__list">
-        <li><a href="#about">/about</a></li>
-        <li><a href="mailto:arianedesf@gmail.com">/say hi</a></li>
-      </ul>
-    </header>
+  <body class="body__container creamsicle-background">
+    <section class="body__banner creamsicle-background">
+        <img src="assets/pic1.png" alt="ariane" class="show-me" id="initial">
+        <img src="assets/pic2.png" alt="still ariane, but surprised" class="hide-me" id="hover">
+    </section>
 
-		<main>
-      <div class="hero">
-        <img class="hero__image" src="assets/gold.jpg" alt="sunny day in edmonton">
-        <div class="hero__copy">
-          <h1>ariane deschenes foucher</h1>
-          <p>web developer</p>
+    <section class="body__main white-background">
+      <div class="main__container">
+        <div class="main__intro">
+          <h1>Oh hello, nice seeing you here.</h1>
+          <div class="">
+            <p>I’m Ariane, a full stack web developer with a soft spot for beautifully designed things.<br />
+              I work at Ladies Learning Code as their Code Mobile Manager, where I get to drive the badass <a href="http://codemobile.rocks">[code:mobile] </a>around the GTA to spread my knowledge and passion for coding.<br />
+              On my free time, I also like to mentor at <a href="http://bitmaker.co">[Bitmaker]</a>, travel the world and brew kombucha.</p>
+          </div>
         </div>
       </div>
 
-      <div class="about" id="about">
-        <img  class="about__image"src="assets/oregon.jpg" alt="chilling at the beach in oregon">
-        <div class="about__copy">
-          <ul class="about__list">
-            <li>hi, i'm Ariane</li>
-            <li>i brew kombucha</li>
-            <li>i can keep plants alive <em>(new)</em></li>
-            <li>i also write code sometimes</li>
-          </ul>
-          <ul class="contact__list">
-            <li><a href="mailto:arianedesf@gmail.com">/@gmail</a></li>
-            <li><a href="https://ca.linkedin.com/in/arianedesf">/linkedin</a></li>
-            <li><a href="https://github.com/madfchr">/github</a></li>
-            <li><a href="https://instagram.com/arianedesf">/instagram</a></li>
-          </ul>
+      <footer>
+        <div class="footer__container fafafa-background">
+          <div class="footer__list">
+            <ul>
+              <li><a href="https://github.com/madfchr">Github</a></li>
+              <li><a href="https://ca.linkedin.com/in/arianedesf">LinkedIn</a></li>
+              <li><a href="https://instagram.com/arianedesf">Instagram</a></li>
+              <li id="oh-hi"><a href="mailto:arianedesf@gmail.com">Say hi</a></li>
+            </ul>
+          </div>
         </div>
-      </div>
+      </footer>
 
-    <footer>
-      <div class="footer__copy">
-        <a href="http://i.imgur.com/QvrGWJ4.gif" target="blank" alt=" Cat gives high-five">ariane deschenes foucher deux mille dix sept</a>
-      </div>
-    </footer>
-
+          <div class="more__container fafafa-background">
+            <div class="more__list">
+              <h1>Oh, you're still here.</h1>
+              <p>Well, what else do you wanna know?</p>
+              <ul>
+                <li>- I speak French. I may still dream in French, but that’s kinda hard to prove.</li>
+                <li>- I’m a soap maker. My friends say that my black clay&charcoal soap is the best. Not gonna lie, it really <em>does</em> make your skin soft.</li>
+                <li>- I can keep plants alive. Although my palm tree looks pretty dry right now, any tips?</li>
+              </ul>
+              <p>Ok, that's it for now. Thanks for stopping by.</p>
+            </div>
+          </div>
+    </section>
   </body>
+
+  <script src="http://storage.googleapis.com/el-static/test/jquery.js"></script>
+  <script src="index.js"></script>
 </html>
