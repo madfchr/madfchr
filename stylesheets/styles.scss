@@ -1,3 +1,5 @@
+// STYLES. RUN : sass --watch stylesheets/styles.scss:stylesheets/styles.css
+
 //  Colours
 $grey: #555555;
 $blackish: #333333;
@@ -57,7 +59,7 @@ a {
   justify-content: flex-start;
   align-content: flex-start;
   align-items: flex-start;
-  @media (max-width: 450px) {
+  @media (max-width: 650px) {
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -73,7 +75,7 @@ a {
   flex: 0 1 45%;
   align-self: auto;
   height: 100vh;
-  @media (max-width: 450px) {
+  @media (max-width: 650px) {
     position: relative;
     order: 0;
     flex: 0 1 40%;
@@ -84,7 +86,7 @@ a {
     position: fixed;
     width: 45%;
     bottom: 0;
-    @media (max-width: 450px) {
+    @media (max-width: 650px) {
       position: relative;
       width: 100%;
     }
@@ -95,7 +97,7 @@ a {
   order: 2;
   flex: 0 1 55%;
   align-self: auto;
-  @media (max-width: 450px) {
+  @media (max-width: 650px) {
     position: relative;
     order: 1;
     flex: 0 1 60%;
@@ -111,7 +113,7 @@ a {
   align-content: center;
   align-items: center;
   height: 80vh;
-  @media (max-width: 450px) {
+  @media (max-width: 650px) {
     height: auto;
   }
 }
@@ -121,7 +123,7 @@ a {
   flex: 0 1 auto;
   align-self: center;
   padding: 0 70px;
-  @media (max-width: 450px) {
+  @media (max-width: 650px) {
     padding: 40px;
   }
 }
@@ -135,7 +137,7 @@ a {
   align-items: center;
   height: 20vh;
   padding: 0 70px;
-  @media (max-width: 450px) {
+  @media (max-width: 650px) {
     padding: 40px;
     height: auto;
   }
@@ -149,7 +151,7 @@ a {
      display: inline;
      font-size: 1rem;
      padding-right: 20px;
-     @media (max-width: 450px) {
+     @media (max-width: 650px) {
        display: block;
        padding-bottom: 18px;
      }
@@ -167,7 +169,7 @@ a {
   align-content: center;
   align-items: center;
   height: 80vh;
-  @media (max-width: 450px) {
+  @media (max-width: 650px) {
     height: auto;
   }
 }
@@ -177,7 +179,7 @@ a {
   flex: 0 1 auto;
   align-self: center;
   padding: 0 70px;
-  @media (max-width: 450px) {
+  @media (max-width: 650px) {
     padding: 150px 40px 40px;
   }
   ul {
@@ -196,4 +198,41 @@ a {
 
 .hide-me {
   display: none;
+}
+
+// ANIMATIONS (inspired by animate.css)
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+@keyframes slideUp__70 {
+  from {
+    transform: translate3d(0, 70%, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideUp__15 {
+  from {
+    transform: translate3d(0, 15%, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideUp__main {
+  animation-name: slideUp__15;
+}
+
+.slideUp__footer {
+  animation-name: slideUp__70;
 }
