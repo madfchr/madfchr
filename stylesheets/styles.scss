@@ -59,6 +59,7 @@ a {
   justify-content: flex-start;
   align-content: flex-start;
   align-items: flex-start;
+  height: 100vh;
   @media (max-width: 650px) {
     position: absolute;
     display: flex;
