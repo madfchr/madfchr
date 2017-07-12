@@ -50,7 +50,8 @@ a {
       flex-wrap: nowrap;
       justify-content: flex-start;
       align-content: stretch;
-      align-items: flex-start; } }
+      align-items: flex-start;
+      height: 100vh; } }
 
 .body__banner {
   order: 1;
