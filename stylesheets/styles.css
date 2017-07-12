@@ -191,4 +191,7 @@ a {
 .slideUp__footer {
   animation-name: slideUp__70; }
 
+[data-aos=fade-up] {
+  transform: translateY(100px); }
+
 /*# sourceMappingURL=styles.css.map */

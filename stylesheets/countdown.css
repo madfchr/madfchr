@@ -1,0 +1,50 @@
+body {
+  text-align: center;
+  background: #fff; }
+
+h1 {
+  color: #F87666;
+  font-weight: 100;
+  font-size: 40px;
+  margin: 40px 0px 20px; }
+
+#clockdiv {
+  font-family: sans-serif;
+  color: #F87666;
+  display: inline-block;
+  font-weight: 100;
+  text-align: center;
+  font-size: 30px; }
+
+#clockdiv > div {
+  padding: 10px;
+  border-radius: 3px;
+  background: #F87666;
+  display: inline-block; }
+
+#clockdiv div > span {
+  padding: 15px;
+  border-radius: 3px;
+  background: #fff;
+  display: inline-block; }
+
+.smalltext {
+  padding-top: 5px;
+  font-size: 16px;
+  color: #fff; }
+
+.countdown__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: center;
+  align-items: flex-start;
+  height: 100vh; }
+
+.countdown__clock {
+  order: 0;
+  flex: 0 1 auto;
+  align-self: center; }
+
+/*# sourceMappingURL=countdown.css.map */
