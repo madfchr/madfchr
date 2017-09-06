@@ -1,197 +1,23 @@
-@charset "UTF-8";
-html,
-body {
-  font-family:  -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 16px;
-  margin: 0; }
+/*
+Errno::ENOENT: No such file or directory @ rb_sysopen - stylesheets/styles.scss
 
-h1 {
-  font-weight: 700;
-  color: #333333;
-  font-size: 1.5rem;
-  line-height: 1.25;
-  margin: 0; }
-
-p {
-  color: #555555;
-  font-size: 1.125rem;
-  line-height: 1.5; }
-
-ul {
-  margin: 0;
-  padding: 0; }
-
-a {
-  color: #5D6CC1;
-  font-weight: 500;
-  text-decoration: none; }
-
-.fafafa-background {
-  background-color: #FAFAFA; }
-
-.creamsicle-background {
-  background-color: #FFD8B7; }
-
-.white-background {
-  background-color: #FFFFFF; }
-
-.body__container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-content: flex-start;
-  align-items: flex-start; }
-  @media (max-width: 650px) {
-    .body__container {
-      position: absolute;
-      display: flex;
-      flex-direction: column;
-      flex-wrap: nowrap;
-      justify-content: flex-start;
-      align-content: stretch;
-      align-items: flex-start;
-      height: 100vh; } }
-
-.body__banner {
-  order: 1;
-  flex: 0 1 45%;
-  align-self: auto;
-  height: 100vh; }
-  @media (max-width: 650px) {
-    .body__banner {
-      position: relative;
-      order: 0;
-      flex: 0 1 40%;
-      align-self: auto;
-      height: auto; } }
-  .body__banner img {
-    position: fixed;
-    width: 45%;
-    bottom: 0; }
-    @media (max-width: 650px) {
-      .body__banner img {
-        position: relative;
-        width: 100%; } }
-
-.body__main {
-  order: 2;
-  flex: 0 1 55%;
-  align-self: auto; }
-  @media (max-width: 650px) {
-    .body__main {
-      position: relative;
-      order: 1;
-      flex: 0 1 60%;
-      align-self: auto; } }
-
-.main__container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  height: 80vh; }
-  @media (max-width: 650px) {
-    .main__container {
-      height: auto; } }
-
-.main__intro {
-  order: 1;
-  flex: 0 1 auto;
-  align-self: center;
-  padding: 0 70px; }
-  @media (max-width: 650px) {
-    .main__intro {
-      padding: 40px; } }
-
-.footer__container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-content: center;
-  align-items: center;
-  height: 20vh;
-  padding: 0 70px; }
-  @media (max-width: 650px) {
-    .footer__container {
-      padding: 40px;
-      height: auto; } }
-
-.footer__list {
-  order: 1;
-  flex: 0 1 auto;
-  align-self: center; }
-  .footer__list li {
-    display: inline;
-    font-size: 1rem;
-    padding-right: 20px; }
-    @media (max-width: 650px) {
-      .footer__list li {
-        display: block;
-        padding-bottom: 18px; } }
-    @media (min-width: 451px) and (max-width: 800px) {
-      .footer__list li {
-        padding-right: 5px; } }
-
-.more__container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  height: 80vh; }
-  @media (max-width: 650px) {
-    .more__container {
-      height: auto; } }
-
-.more__list {
-  order: 1;
-  flex: 0 1 auto;
-  align-self: center;
-  padding: 0 70px; }
-  @media (max-width: 650px) {
-    .more__list {
-      padding: 150px 40px 40px; } }
-  .more__list ul {
-    list-style: none; }
-  .more__list li {
-    color: #555555;
-    font-size: 1.125rem;
-    line-height: 1.5; }
-
-.show-me {
-  display: block; }
-
-.hide-me {
-  display: none; }
-
-.animated {
-  animation-duration: 1s;
-  animation-fill-mode: both; }
-
-@keyframes slideUp__70 {
-  from {
-    transform: translate3d(0, 70%, 0);
-    visibility: visible; }
-  to {
-    transform: translate3d(0, 0, 0); } }
-@keyframes slideUp__15 {
-  from {
-    transform: translate3d(0, 15%, 0);
-    visibility: visible; }
-  to {
-    transform: translate3d(0, 0, 0); } }
-.slideUp__main {
-  animation-name: slideUp__15; }
-
-.slideUp__footer {
-  animation-name: slideUp__70; }
-
-[data-aos=fade-up] {
-  transform: translateY(100px); }
-
-/*# sourceMappingURL=styles.css.map */
+Backtrace:
+/Users/arianedesf/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:484:in `read'
+/Users/arianedesf/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:484:in `update_stylesheet'
+/Users/arianedesf/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Users/arianedesf/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:209:in `each'
+/Users/arianedesf/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Users/arianedesf/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:294:in `watch'
+/Users/arianedesf/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/plugin.rb:109:in `method_missing'
+/Users/arianedesf/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/exec/sass_scss.rb:360:in `watch_or_update'
+/Users/arianedesf/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/exec/sass_scss.rb:51:in `process_result'
+/Users/arianedesf/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/exec/base.rb:52:in `parse'
+/Users/arianedesf/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/exec/base.rb:19:in `parse!'
+/Users/arianedesf/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.24/bin/sass:13:in `<top (required)>'
+/Users/arianedesf/.rbenv/versions/2.3.1/bin/sass:22:in `load'
+/Users/arianedesf/.rbenv/versions/2.3.1/bin/sass:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Errno::ENOENT: No such file or directory @ rb_sysopen - stylesheets/styles.scss"; }
